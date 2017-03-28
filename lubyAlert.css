@@ -1,0 +1,76 @@
+﻿
+.lubyAlert{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    background: rgba(0,0,0,0.8);
+    text-align: center;
+    padding: 20px 50px;
+    z-index: 50000;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.8);
+}
+.lubyAlert > .lubyWrapper{
+	position: relative;
+    width: 100%;
+    display: inline-block;
+}
+    .lubyWrapper .lubyAlertIcon{
+        color: #ffffff;
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+    .lubyWrapper .lubyAlertText{
+        width: 100%;
+        color: #ffffff;
+        font-size: 30px;
+        font-weight: 200;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+        .lubyWrapper .lubyAlertText p {
+            color: #ffffff;
+        }
+    .lubyWrapper .lubyAlertInput{
+        width: 98%;
+        height: 40px;
+        margin-top: 20px;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        font-size: 20px;
+        color: #444444;
+        font-weight: 200;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+    }
+        .lubyWrapper .lubyAlertInput:focus{
+            border:1px solid #48cfad;
+            box-shadow: 0px 0px 7px rgba(81, 203, 238, 1);
+        }
+    .lubyAlert .lubyAlertButton{
+        display: inline-block;
+        width: 120px;
+        height: 40px;
+        line-height: 42px;
+        color: #ffffff;
+        font-weight: 200;
+        border-radius: 5px;
+        margin: 5px;
+        margin-top: 25px;
+        cursor: pointer;
+        transition: opacity 0.2s;
+    }
+        .lubyAlert .lubyAlertButton:hover{
+            opacity: 0.7;
+        }
+        .lubyAlert .lubyAlertButton.okButton{
+            color: #48cfad;
+        }
+        .lubyAlert .lubyAlertButton.cancelButton{
+            color: #ec6446;
+        }
